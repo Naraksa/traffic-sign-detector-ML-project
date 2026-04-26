@@ -9,7 +9,9 @@ app = Flask(__name__)
 # ── Load YOLO model ──────────────────────────────────────────────────────────
 model = None
 try:
-    from ultralytics import YOLO
+    import importlib
+    ultralytics = importlib.import_module("ultralytics")
+    YOLO = ultralytics.YOLO
     MODEL_PATH = os.environ.get("MODEL_PATH", "model/best.pt")
     if os.path.exists(MODEL_PATH):
         model = YOLO(MODEL_PATH)

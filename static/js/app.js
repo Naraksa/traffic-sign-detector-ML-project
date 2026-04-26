@@ -125,8 +125,8 @@ function stopCamera() {
   currentMode = 'upload';
   document.getElementById('btnUpload').classList.add('active');
   document.getElementById('btnScan').classList.remove('active');
-  document.getElementById('uploadPanel').style.display = '';
-  document.getElementById('scanPanel').style.display   = 'none';
+  document.getElementById('uploadPanel').style.display = 'none';
+  document.getElementById('scanPanel').style.display   = '';
 }
 
 function captureFrame() {
