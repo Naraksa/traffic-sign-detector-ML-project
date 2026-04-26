@@ -1,9 +1,3 @@
 ultralytics
-shutil
-path
-os
-random
 gunicorn
 flask
-io
-base64
