@@ -8,7 +8,7 @@ __pycache__/
 
 
 # Models
-models/*.pt
+model/*.pt
 
 # Outputs
 outputs/
